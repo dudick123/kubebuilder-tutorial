@@ -1,0 +1,155 @@
+# .gitignore for Go and GoLand/IntelliJ IDEA
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+dist/
+output/
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE - GoLand / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+
+# Kubebuilder
+# Uncomment the following lines if you want to ignore kubebuilder generated files
+# config/crd/bases/*.yaml
+# config/webhook/manifests.yaml
+# config/rbac/role.yaml
+
+# Generated files
+zz_generated.*
+
+# Controller-gen
+controller-gen
+
+# Kustomize
+kustomize
+
+# Test coverage
+coverage.txt
+coverage.html
+cover.out
+profile.out
+
+# Local testing
+testbin/
+envtest/
+
+# Build artifacts
+!vendor/.gitkeep
+manager
+
+# Editor backup files
+\#*#
+.\#*
+
+# Local configuration files
+config/local/
+*.local
+
+# Helm
+charts/**/*.tgz
+
+# Docker
+*.tar
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.csr
+*.cert
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+
+# Local development
+.cache/
+tmp/
+
+# Private notes
+notes.txt
+TODO.txt
+scratch/
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
+.Trash-*
+
+# Windows
+desktop.ini
+$RECYCLE.BIN/
+
+# JetBrains specific
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/mongoSettings.xml
+.idea/httpRequests
+.idea/caches/build_file_checksums.ser
+
+# Sensitive data
+secrets/
+credentials/
