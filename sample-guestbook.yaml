@@ -1,0 +1,11 @@
+apiVersion: webapp.example.com/v1alpha1
+kind: GuestBook
+metadata:
+  name: my-guestbook
+  namespace: default
+spec:
+  # Number of replicas (1-10)
+  replicas: 2
+  
+  # Welcome message displayed to visitors
+  welcomeMessage: "Welcome to my Guestbook!"
